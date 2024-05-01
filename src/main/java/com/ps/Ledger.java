@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.stream.Collectors;
 
 public class Ledger {
 
@@ -138,7 +139,40 @@ public class Ledger {
 
                     switch (nestedLedgerChoice) {
                         case "1":
-                            // month to year
+
+                            try {
+                                System.out.print("Enter month (MM): ");
+                                int month = scanner.nextInt();
+                                System.out.print("Enter year (YYYY): ");
+                                int year = scanner.nextInt();
+                                System.out.println("Enter the day of the month you want the last transactions");
+                                int dayOfMonth = scanner.nextInt();
+
+                                LocalDate startDate = LocalDate.of(year, month, 1);
+                                LocalDate endDate = LocalDate.of(year, month, dayOfMonth);
+
+                                ArrayList<Transaction> monthToDateTransactions = new ArrayList<>();
+
+                                for (Transaction transaction : transactions) {
+                                    LocalDate transactionDate = transaction.getDate();
+                                    if (!transactionDate.isBefore(startDate) && !transactionDate.isAfter(endDate)) {
+                                        monthToDateTransactions.add(transaction);
+                                    }
+                                }
+
+                                Collections.reverse(monthToDateTransactions);
+
+                                for (Transaction transaction : monthToDateTransactions) {
+                                    System.out.println(monthToDateTransactions);
+                                }
+
+                                Collections.reverse(monthToDateTransactions);
+
+                            }catch(Exception e){
+                                System.out.println("Invalid input.");
+                            }
+
+                            // month to date ex: in order of from may 31st - may 1st
                             break;
                         case "2":
                             // previous month

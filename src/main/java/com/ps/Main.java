@@ -54,13 +54,12 @@ public class Main {
                     System.out.println("L) Ledger");
                     System.out.println("X) Exit");
                     System.out.println();
-                    System.out.print("Choose an option: ");
                     break;
                 case "X":
                     System.out.println("Exited.");
                     break;
                 default:
-                    System.out.println("Invalid option.");
+                    System.out.println("Choose an option:");
             }
         } while (!choice.equals("X"));
     }
