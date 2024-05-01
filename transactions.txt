@@ -1,16 +1,10 @@
 
-Transaction{date=2002-06-20, time=07:28, description='asd', vendor='asd', amount= 15.0}
-Transaction{date=2002-06-20, time=07:23, description='asd', vendor='asd', amount= 21.0}
-Transaction{date=2003-06-19, time=07:21, description='asd', vendor='asd', amount= -21.0}
-Transaction{date=2002-02-20, time=06:15, description='asd', vendor='asd', amount= -21.0}
-Transaction{date=2002-06-20, time=06:12, description='asd', vendor='asd', amount= 15.0}
-Transaction{date=2002-06-20, time=07:15, description='asd', vendor='asd', amount= 15.0}
-Transaction{date=2002-06-20, time=07:15, description='asd', vendor='asd', amount= 123.0}
-Transaction{date=2003-06-20, time=07:15, description='asd', vendor='asd', amount= 15.0}
-Transaction{date=2002-06-01, time=07:15, description='asd', vendor='asd', amount= 766.0}
-Transaction{date=2002-06-12, time=06:51, description='asd', vendor='asd', amount= 12.0}
-Transaction{date=2002-06-20, time=07:21, description='asd', vendor='asd', amount= 15.0}
-Transaction{date=2002-06-20, time=07:21, description='as', vendor='as', amount= 12.0}
-Transaction{date=2002-06-01, time=07:21, description='asd', vendor='asd', amount= 12.0}
-Transaction{date=2002-06-20, time=07:15, description='asd', vendor='asd', amount= 12.0}
-Transaction{date=2002-06-01, time=07:12, description='awd', vendor='asd', amount= 15.0}
+Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 1.0}
+Transaction{date=2003-07-20, time=06:24, description='asd', vendor='asd', amount= 14.0}
+Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 1616161.0}
+Transaction{date=2002-06-19, time=06:21, description='asdad', vendor='41', amount= 24.0}
+Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 123.0}
+Transaction{date=2002-06-20, time=07:29, description='asd', vendor='asd', amount= 12345.0}
+Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 12.0}
+Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 12.0}
+Transaction{date=2002-06-25, time=07:24, description='asd', vendor='asd', amount= 1234.0}
