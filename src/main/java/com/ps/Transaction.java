@@ -66,7 +66,7 @@ public class Transaction {
                 ", time=" + time +
                 ", description='" + description + '\'' +
                 ", vendor='" + vendor + '\'' +
-                ", amount=" + amount +
+                ", amount= " + amount +
                 '}';
     }
 

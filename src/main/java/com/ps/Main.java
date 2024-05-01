@@ -9,25 +9,38 @@ public class Main {
 
         String choice;
 
+        System.out.println("Home Screen:");
+        System.out.println("D) Add deposit");
+        System.out.println("P) Make payment (debit)");
+        System.out.println("L) Ledger");
+        System.out.println("X) Exit");
+        System.out.print("Choose an option: ");
+
         do {
 
-            System.out.println("Home Screen:");
-            System.out.println("D) Add deposit");
-            System.out.println("P) Make payment (debit)");
-            System.out.println("L) Ledger");
-            System.out.println("X) Exit");
-            System.out.print("Choose an option: ");
             choice = scanner.nextLine().toUpperCase();
 
             switch (choice) {
                 case "D":
                     ledger.addDeposit(scanner);
+                    System.out.println("Home Screen:");
+                    System.out.println("D) Add deposit");
+                    System.out.println("P) Make payment (debit)");
+                    System.out.println("L) Ledger");
+                    System.out.println("X) Exit");
+                    System.out.print("Choose an option: ");
                     break;
                 case "P":
-
+                    ledger.makePayment(scanner);
+                    System.out.println("Home Screen:");
+                    System.out.println("D) Add deposit");
+                    System.out.println("P) Make payment (debit)");
+                    System.out.println("L) Ledger");
+                    System.out.println("X) Exit");
+                    System.out.print("Choose an option: ");
                     break;
                 case "L":
-
+                    ledger.showLedger(scanner);
                     break;
                 case "X":
                     System.out.println("Exited.");

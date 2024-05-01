@@ -1,1 +1,2 @@
-
+Transaction{date=2002-06-20, time=07:27, description='asd', vendor='asd', amount= 165.0}
+Transaction{date=2002-06-19, time=07:15, description='asd', vendor='hgf', amount= -829.0}
