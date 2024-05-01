@@ -89,6 +89,7 @@ public class Ledger {
         String choiceForLedger = scanner.nextLine().toUpperCase();
 
         switch (choiceForLedger) {
+
             case "A":
 
                 Collections.reverse(transactions);
@@ -97,17 +98,6 @@ public class Ledger {
                 }
                 // restore
                 Collections.reverse(transactions);
-
-                System.out.println();
-
-                System.out.println("Home Screen:");
-                System.out.println("D) Add deposit");
-                System.out.println("P) Make payment (debit)");
-                System.out.println("L) Ledger");
-                System.out.println("X) Exit");
-                System.out.println();
-                System.out.print("Choose an option: ");
-
                 break;
 
             case "D":
@@ -116,12 +106,15 @@ public class Ledger {
                 for (Transaction transaction : onlyDeposits) {
                     System.out.println(transaction);
                 }
-                // restore
                 Collections.reverse(onlyDeposits);
                 break;
 
             case "P":
-                System.out.println("test2");
+                Collections.reverse(onlyPayments);
+                for (Transaction transaction : onlyPayments) {
+                    System.out.println(transaction);
+                }
+                Collections.reverse(onlyDeposits);
                 break;
             case "R":
                 System.out.println("test3");
