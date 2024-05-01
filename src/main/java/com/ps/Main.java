@@ -9,11 +9,14 @@ public class Main {
 
         String choice;
 
+        System.out.println();
         System.out.println("Home Screen:");
+        System.out.println();
         System.out.println("D) Add deposit");
         System.out.println("P) Make payment (debit)");
         System.out.println("L) Ledger");
         System.out.println("X) Exit");
+        System.out.println();
         System.out.print("Choose an option: ");
 
         do {
@@ -28,6 +31,7 @@ public class Main {
                     System.out.println("P) Make payment (debit)");
                     System.out.println("L) Ledger");
                     System.out.println("X) Exit");
+                    System.out.println();
                     System.out.print("Choose an option: ");
                     break;
                 case "P":
@@ -37,6 +41,7 @@ public class Main {
                     System.out.println("P) Make payment (debit)");
                     System.out.println("L) Ledger");
                     System.out.println("X) Exit");
+                    System.out.println();
                     System.out.print("Choose an option: ");
                     break;
                 case "L":

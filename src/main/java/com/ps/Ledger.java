@@ -8,12 +8,18 @@ import java.time.format.DateTimeFormatter;
 public class Ledger {
 
     private ArrayList<Transaction> transactions;
+    private ArrayList<Transaction> onlyDeposits;
+    private ArrayList<Transaction> onlyPayments;
 
     private static final DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("HH:mm");
 
     public Ledger() {
+
         this.transactions = new ArrayList<>();
+        this.onlyDeposits = new ArrayList<>();
+        this.onlyPayments = new ArrayList<>();
+
     }
 
     public void addDeposit(Scanner scanner) {
@@ -32,8 +38,13 @@ public class Ledger {
             scanner.nextLine();
             Transaction transaction = new Transaction(date, time, description, vendor, amount);
             transactions.add(transaction);
+
+            onlyDeposits.add(transaction);
+
             writer.println(transaction);
+            System.out.println();
             System.out.println("Deposit added successfully.");
+            System.out.println();
 
         } catch (IOException e) {
             System.out.println("Error occurred: " + e.getMessage());
@@ -56,17 +67,22 @@ public class Ledger {
             Transaction transaction = new Transaction(date, time, description, vendor, -amount);
             transactions.add(transaction);
             writer.println(transaction);
+            System.out.println();
             System.out.println("Payment made successfully.");
+            System.out.println();
         } catch (IOException e) {
             System.out.println("Error occurred: " + e.getMessage());
         }
     }
 
     public void showLedger(Scanner scanner) {
+        System.out.println();
         System.out.println("Ledger");
+        System.out.println();
         System.out.println("A) All - Display all entries");
         System.out.println("D) Deposits - Display only the entries that are deposits into the account");
         System.out.println("R) Reports - Custom Search");
+        System.out.println();
 
         System.out.print("Choose an option: ");
 
@@ -82,15 +98,36 @@ public class Ledger {
                 // restore
                 Collections.reverse(transactions);
 
+                System.out.println();
+
+                System.out.println("Home Screen:");
+                System.out.println("D) Add deposit");
+                System.out.println("P) Make payment (debit)");
+                System.out.println("L) Ledger");
+                System.out.println("X) Exit");
+                System.out.println();
+                System.out.print("Choose an option: ");
+
                 break;
+
             case "D":
-                System.out.println("test1");
+
+                Collections.reverse(onlyDeposits);
+                for (Transaction transaction : onlyDeposits) {
+                    System.out.println(transaction);
+                }
+                // restore
+                Collections.reverse(onlyDeposits);
                 break;
+
             case "P":
                 System.out.println("test2");
                 break;
             case "R":
                 System.out.println("test3");
+                break;
+            case "H":
+                System.out.println("test4");
                 break;
 
         }
