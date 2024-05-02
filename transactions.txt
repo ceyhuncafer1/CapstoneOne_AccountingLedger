@@ -1,10 +1,19 @@
-
-Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 1.0}
-Transaction{date=2003-07-20, time=06:24, description='asd', vendor='asd', amount= 14.0}
-Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 1616161.0}
-Transaction{date=2002-06-19, time=06:21, description='asdad', vendor='41', amount= 24.0}
-Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 123.0}
-Transaction{date=2002-06-20, time=07:29, description='asd', vendor='asd', amount= 12345.0}
-Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 12.0}
-Transaction{date=2002-06-20, time=07:24, description='asd', vendor='asd', amount= 12.0}
-Transaction{date=2002-06-25, time=07:24, description='asd', vendor='asd', amount= 1234.0}
+Transaction{date=2023-04-15, time=10:13, description='ergonomic keyboard', vendor='Amazon', amount= -89.5}
+Transaction{date=2023-04-15, time=11:15, description='Invoice 1001 paid', vendor='Joe', amount= 1500.0}
+Transaction{date=2024-04-01, time=08:30, description='Salary deposit', vendor='Company ABC', amount= 3000.0}
+Transaction{date=2024-04-05, time=12:00, description='Electricity bill payment', vendor='Utility Co.', amount= -100.0}
+Transaction{date=2024-04-10, time=14:45, description='Internet subscription payment', vendor='ISP Inc.', amount= -50.0}
+Transaction{date=2024-04-15, time=10:00, description='Grocery shopping', vendor='Supermarket XYZ', amount= -80.0}
+Transaction{date=2024-04-20, time=09:00, description='Gas bill payment', vendor='Utility Co.', amount= -70.0}
+Transaction{date=2024-04-25, time=13:30, description='Phone bill payment', vendor='Telecom Corp.', amount= -40.0}
+Transaction{date=2023-03-17, time=14:25, description='Car insurance payment', vendor='Allstate', amount= -39.54}
+Transaction{date=2024-01-01, time=07:24, description='Salary deposit', vendor='Company DFG', amount= 7255.87}
+Transaction{date=2023-04-11, time=09:17, description='Invoice 1001 paid', vendor='Joe', amount= 1500.0}
+Transaction{date=2023-04-12, time=18:15, description='Invoice 1001 paid', vendor='Joe', amount= 1500.0}
+Transaction{date=2023-04-18, time=14:12, description='Invoice 1001 paid', vendor='Joe', amount= 1500.0}
+Transaction{date=2023-04-15, time=10:12, description='ergonomic mouse', vendor='Amazon', amount= -89.5}
+Transaction{date=2023-04-15, time=10:11, description='ergonomic headset', vendor='Amazon', amount= -89.5}
+Transaction{date=2023-04-18, time=14:13, description='Invoice 1002 paid', vendor='Joe', amount= 1500.0}
+Transaction{date=2024-04-10, time=14:46, description='Internet subscription payment', vendor='ISP Inc.', amount= -50.0}
+Transaction{date=2024-05-01, time=14:46, description='Internet subscription payment', vendor='ISP Inc.', amount= -80.0}
+Transaction{date=2024-04-10, time=14:46, description='Internet subscription payment', vendor='ISP Inc.', amount= -50.76}
