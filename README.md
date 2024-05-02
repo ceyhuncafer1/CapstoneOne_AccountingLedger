@@ -16,12 +16,14 @@ Ledger: User can view all entries (transactions), only deposits, only payments, 
 
 ![image](https://github.com/ninjakid56810/CapstoneOne_AccountingLedger/assets/70558570/6ba039ab-f336-4614-bbe9-462cb309a458)
 
+This is by far my best attempt at any sort of application. I tried my best with error and input handling. Just thinking of the edge cases was hard. 
+When initially creating the program. i had read the tasks wrong and filtered improperly. It was hard to make it work on the fly and change everything.
+Doing this definitely sharpened my understanding of code-flow and logic.
+
 One interesting piece of code from this project:
 
-One of our prompts was that "All entries should show the newest entry first" when displaying entries to the screen.
-The transactions.txt file appended to the top of the file, however in an ArrayList it appended to the end of the list.
-To display newest entries first, I reversed the array list, printed it, and reveresed it back to its original state.
-
+Interesting piece of code - What was most interesting to me was I was yearning for "clean" syntax to my standards. Trying to finish and see the end result of squeaky clean code.
+I did this by doing 3 classes instead of two and calling methods into main from the other class. Granted, the other class looks very messy still and i definitely could've reduced redundancy further.
 
 
 
