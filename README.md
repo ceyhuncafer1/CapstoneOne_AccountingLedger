@@ -22,7 +22,7 @@ Doing this definitely sharpened my understanding of code-flow and logic.
 
 One interesting piece of code from this project:
 
-Interesting piece of code - What was most interesting to me was I was yearning for "clean" syntax to my standards. Trying to finish and see the end result of squeaky clean code.
+I was yearning for "clean" syntax to my standards. Trying to finish and see the end result of squeaky clean code.
 I did this by doing 3 classes instead of two and calling methods into main from the other class. Granted, the other class looks very messy still and i definitely could've reduced redundancy further.
 
 
